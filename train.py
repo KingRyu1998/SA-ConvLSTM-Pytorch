@@ -24,7 +24,7 @@ from tqdm import tqdm
 import numpy as np
 
 # config
-random_seed = 1998
+random_seed = 1997
 np.random.seed(random_seed)
 torch.manual_seed(random_seed)
 if torch.cuda.device_count() > 1:

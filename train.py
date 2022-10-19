@@ -97,6 +97,7 @@ def train():
         for inputs, labels in tq_bar:
             inputs = inputs.to(device)
             labels = labels.to(device)
+            optimizer.zero_grad()
             preds = net(inputs)
             loss = loss_func(preds, labels)
             train_loss = loss.item() / batch_size
